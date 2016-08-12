@@ -1,0 +1,11 @@
+﻿  VisualGDB: Run "cmd.exe /c "C:\Program Files (x86)\Sysprogs\VisualGDB\make.exe" TARGET=PIXRACERF4 DEBUG=GDB" in directory "C:\Users\Maxime\Desktop\GitHub" on local computer
+  Le chemin d'accès spécifié est introuvable.
+  "C:\Program: Interrupt/Exception caught (code = 0xc0000005, addr = 0x46524543)
+  -------------------------------------------------------------
+  Command exited with code 255
+  Executable: cmd.exe
+  Arguments: /c "C:\Program Files (x86)\Sysprogs\VisualGDB\make.exe" TARGET=PIXRACERF4 DEBUG=GDB
+  Directory: C:\Users\Maxime\Desktop\GitHub
+VisualGDB : error : Command-line action failed
+EXEC : error : Build has failed. See the Output window for more details.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "C:\Users\Maxime\Desktop\GitHub\EmbeddedProject1\EmbeddedProject1\EmbeddedProject1.vcxproj" "/solution:C:\Users\Maxime\Desktop\GitHub\EmbeddedProject1\EmbeddedProject1.sln" "/config:Debug" "/platform:Win32"" exited with code 1.

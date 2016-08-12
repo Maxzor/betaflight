@@ -270,8 +270,14 @@ void init(void)
 #if defined(USE_UART2) && defined(STM32F40_41xxx)
     pwm_params.useUART2 = doesConfigurationUsePort(SERIAL_PORT_USART2);
 #endif
+#if defined(USE_UART2) && defined(STM32F427_437xx)
+	pwm_params.useUART2 = doesConfigurationUsePort(SERIAL_PORT_USART2);
+#endif
 #if defined(USE_UART6) && defined(STM32F40_41xxx)
     pwm_params.useUART6 = doesConfigurationUsePort(SERIAL_PORT_USART6);
+#endif
+#if defined(USE_UART6) && defined(STM32F427_437xx)
+	pwm_params.useUART6 = doesConfigurationUsePort(SERIAL_PORT_USART6);
 #endif
     pwm_params.useVbat = feature(FEATURE_VBAT);
     pwm_params.useSoftSerial = feature(FEATURE_SOFTSERIAL);

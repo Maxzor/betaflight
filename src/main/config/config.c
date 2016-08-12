@@ -119,6 +119,9 @@ void targetConfiguration(void);
     #if defined (STM32F411xE)
         #define FLASH_PAGE_SIZE                 ((uint32_t)0x20000)
     #endif
+    #if defined (STM32F427_437xx)
+        #define FLASH_PAGE_SIZE                 ((uint32_t)0x20000)
+    #endif
 
 #endif
 
@@ -136,6 +139,8 @@ void targetConfiguration(void);
 #if defined(STM32F40_41xxx)
 #define FLASH_PAGE_COUNT 4 // just to make calculations work
 #elif defined (STM32F411xE)
+#define FLASH_PAGE_COUNT 4 // just to make calculations work
+#elif defined (STM32F427_437xx)
 #define FLASH_PAGE_COUNT 4 // just to make calculations work
 #else
 #define FLASH_PAGE_COUNT ((FLASH_SIZE * 0x400) / FLASH_PAGE_SIZE)
